@@ -2,10 +2,18 @@ class Subject;
 class Observer
 {
 public:
+    // regist to subject when construct
     Observer(Subject* subject): m_subject(subject){}
+
     virtual ~Observer(){}
+
+    // update message
     virtual void update(int updateStr) = 0;
+
+    // remove from the old subject and regist to a new subject;
     void regist(Subject* subject);
+
+    // remove from the old subject;
     void remove();
 
 protected:

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "AbstractFactory.h"
 
 IngredientA* AbstractFactoryA::createIngredientA() const

@@ -16,7 +16,7 @@ class ProductA: public Product
 {
 public:
     ProductA(const AbstractFactory& factory);
-	virtual ~ProductA(){};
+	virtual ~ProductA();
     virtual void printProductName();
 
 private:
@@ -28,7 +28,7 @@ class ProductB: public Product
 {
 public:
     ProductB(const AbstractFactory& factory);
-	virtual ~ProductB(){};
+	virtual ~ProductB();
     virtual void printProductName();
 
 private:
